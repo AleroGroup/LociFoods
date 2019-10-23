@@ -1,3 +1,116 @@
 // Color
 @import "./components/colour.scss";
 @import "./components/main.scss";
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body,.display-1, .display-2, .title  { 
+     color: $loci-gray !important;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    margin-top: 140px;
+}
+
+.links_item {
+    color: $loci-gray !important;
+    text-decoration: none;
+    margin: 0.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.links_item.active {
+    color:  #FD7D12 !important;
+    text-decoration: none;
+    margin: 0.5rem;
+    font-family: 'Nunito', sans-serif;;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 3px solid;
+}
+
+.description {
+     color: $loci-gray !important;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    text-transform: capitalize;
+    width: 421px;
+
+    margin-top: 200px;
+}
+
+
+.main_title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 500;
+}
+
+.text-centered {
+    text-align: center;
+    width: 742px;
+}
+/* pages */
+
+#home {
+    width: 100vw;
+}
+
+#aboutus {
+    top: 0;
+    margin-top:0px;
+}
+
+
+#ourproducts {
+  top: 0;
+  margin-top:0px;
+}
+
+#download {
+    top: 0;
+    margin-top:0px;
+}
+
+
+.title-1 {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 38px;
+}
+
+.product_imgs {
+    border-radius: 10px !important;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+#download_section {
+    display: flex;
+    background-color: opacity($color: #0000007a);
+    width: 100vw;
+}

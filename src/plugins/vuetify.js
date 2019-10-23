@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
+import '@mdi/font/css/materialdesignicons.css'
 
 Vue.use(Vuetify)
 
@@ -14,7 +15,7 @@ export default new Vuetify({
         secondary: '#FD7D12',
         accent: '#82B1FF',
         error: '#FF5252',
-        info: '#2196F3',
+        info: '#656464',
         success: '#4CAF50',
         warning: '#FFC107'
       }

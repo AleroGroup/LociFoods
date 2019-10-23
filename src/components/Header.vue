@@ -1,8 +1,14 @@
 <template>
-<v-toolbar flat color="transparent">
+<v-toolbar fixed flat color="transparent" app class="ml-10">
     <v-toolbar-title>
-        <v-img :src='logo' :width="w" class="ml-5 logo"></v-img>
+        <v-img :src='logo' :width="w" class="ml-1 logo"></v-img>
     </v-toolbar-title>
+    <v-layout justify-start mt-12 ml-6>
+      <a href="#home" class="links_item active">Home</a>
+      <a href="#aboutus" class="links_item">About us</a>
+      <a href="#ourproducts" class="links_item">Our Products</a>
+      <a href="#contactus" class="links_item">Contact us</a>
+    </v-layout>
 </v-toolbar>
 </template>
 

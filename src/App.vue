@@ -7,7 +7,8 @@
 </template>
 
 <script>
-
+import AOS from 'aos'
+AOS.init()
 export default {
   name: 'App',
   data: () => ({

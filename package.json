@@ -9,7 +9,11 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@mdi/font": "^4.5.95",
+    "aos": "^2.3.4",
     "core-js": "^3.1.2",
+    "css": "^2.2.4",
+    "css-loader": "^3.2.0",
     "vue": "^2.6.10",
     "vue-head": "^2.1.2",
     "vue-router": "^3.0.6",
