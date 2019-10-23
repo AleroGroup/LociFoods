@@ -8,7 +8,7 @@
             </v-layout>
             </v-flex>
              <v-flex xs12 md4 class="mt-10">
-               <v-img :src="imageurl">
+               <v-img :src="imageurl" class="img">
                  <v-layout justify-center align-center mt-7>
                  <v-card width="220" height="280" class="ma-6 pt-2 elevation-5">
                      <v-layout column justify-center align-center mt-4>
@@ -44,3 +44,9 @@ export default {
   })
 }
 </script>
+
+<style scoped>
+  .img{
+    width: 100vw;
+  }
+</style>

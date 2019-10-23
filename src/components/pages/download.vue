@@ -1,19 +1,17 @@
 <template>
- <v-content>
-     <v-layout row justify-center style="margin-top:200px;margin-left:20px" class="download_section">
-      <v-card flat width="77%" color="info lighten-5">
-        <v-layout column pa-6>
-            <h1 class="display-1 mt-5 pl-12">Ready to get started?</h1>
-            <h2 class="title pl-12 font-weight-light"> Download the app today</h2>
-        </v-layout>
-      </v-card>
-      <v-card flat width="77%" color="info lighten-5">
-        <v-layout column pa-6>
-            <v-img :src="img"></v-img>
-        </v-layout>
-      </v-card>
+ <v-layout justify-center align-center>
+   <v-card flat color="info lighten-5" height="200px" width="80%">
+     <v-layout row align-center>
+        <div class="mr-12 mt-10">
+          <h1 class="display-1 mt-5 pl-12">Ready to get started?</h1>
+          <h2 class="title pl-12 mt-3 font-weight-light"> Download the app today</h2>
+        </div>
+        <div class="ml12">
+          <v-img :src="img" class="icon-btn mt-10"></v-img>
+         </div>
     </v-layout>
- </v-content>
+   </v-card>
+ </v-layout>
 </template>
 
 <script>
@@ -25,3 +23,9 @@ export default {
   })
 }
 </script>
+<style scoped>
+  .icon-btn{
+    width: 213.44px;
+    height: 62px;
+  }
+</style>
