@@ -36,7 +36,7 @@
 const IMAGEKIT_BASE_URL = 'https://ik.imagekit.io/qpt2onjfe/'
 
 export default {
-  name: 'App',
+  name: 'about',
   data: () => ({
     imageurl: IMAGEKIT_BASE_URL + '/images/photos/aboutus__A8BibP-Q1.png',
     image_1: IMAGEKIT_BASE_URL + '/images/icons/eye__icon_4PmAGsq34U.svg',

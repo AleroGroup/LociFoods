@@ -1,11 +1,11 @@
 <template>
   <v-content id="homepage">
     <section id="home">
-    <v-layout row wrap hidden-sm-and-down>
+    <v-layout row hidden-sm-and-down>
       <v-img :src='main'>
        <LociHeader />
-          <v-layout column mt-4 style="margin-left:100px">
-            <div class="description"> Get Fresh, delicious <span class="secondary--text">Homecooked </span> Meals...</div>
+          <v-layout column style="margin-left:100px">
+            <div class="description" style="margin-top:170px"> Get Fresh, delicious <span class="secondary--text">Homecooked </span> Meals...</div>
           </v-layout>
           <v-btn dark large color="#0699CF" class="mt-3" style="margin-left:105px">Download App</v-btn>
       <img />
@@ -67,7 +67,7 @@ export default {
     }
   },
   data: () => ({
-    main: IMAGEKIT_BASE_URL + '/images/main_DzAy-YLxM.svg',
+    main: IMAGEKIT_BASE_URL + '/images/photos/Group_357_gpGHIcRtd.svg',
     main_mobile: IMAGEKIT_BASE_URL + '/loci/images/photos/img_N12h_ZdOT8.png'
   })
 }

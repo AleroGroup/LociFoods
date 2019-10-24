@@ -1,7 +1,7 @@
 <template>
 <v-toolbar fixed flat color="transparent" app class="ml-10">
     <v-toolbar-title>
-       <router-link to="/"><v-img :src='logo' :width="w" class="ml-1 logo"></v-img></router-link>
+       <router-link to="/"><v-img :src='logo' :width="w" class="ml-7 logo"></v-img></router-link>
     </v-toolbar-title>
 </v-toolbar>
 </template>
@@ -13,7 +13,7 @@ export default {
   data: () => ({
     // image size
     logo: IMAGEKIT_BASE_URL + '/loci/images/Loci_logo_d9jan0ikQ.svg',
-    w: '80'
+    w: '70'
   })
 }
 </script>
