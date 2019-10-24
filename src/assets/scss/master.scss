@@ -28,19 +28,7 @@ body,.display-1, .display-2, .title  {
     text-transform: capitalize;
 }
 
-.links_item.active {
-    color:  #FD7D12 !important;
-    text-decoration: none;
-    margin: 0.5rem;
-    font-family: 'Nunito', sans-serif;;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 23px;
-    text-align: center;
-    text-transform: capitalize;
-    border-bottom: 3px solid;
-}
+
 
 .description {
      color: $loci-gray !important;
@@ -114,3 +102,17 @@ body,.display-1, .display-2, .title  {
     background-color: opacity($color: #0000007a);
     width: 100vw;
 }
+
+#introduction{
+    color: $loci-gray !important;
+    width: 600px;
+    height: 390px;
+    left: 135px;
+    top: 451px;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: justify;
+
+ }
