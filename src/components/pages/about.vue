@@ -1,15 +1,16 @@
 <template>
     <v-content>
         <v-layout column justify-center align-center mt-8>
-            <v-flex xs12 md4 >
+            <v-flex xs12 md4>
             <v-layout column justify-center align-center>
                 <div class="display-2 font-weight-light"> About Us</div>
-                <div class="subtitle text-centered mt-5"> The name Loci is a play on the word location and is the plural of locus, which means a place or locality in Latin. At Loci Foods we aim to create a healthy society through awareness and by providing products and services that leads to healthy eating habits.</div>
+                <v-flex xs12 md4 class="subtitle text-centered mt-5 pa-3"> The name Loci is a play on the word location and is the plural of locus, which means a place or locality in Latin. At Loci Foods we aim to create a healthy society through awareness and by providing products and services that leads to healthy eating habits.
+                </v-flex>
             </v-layout>
             </v-flex>
              <v-flex xs12 md4 class="mt-10">
                <v-img :src="imageurl" class="img">
-                 <v-layout justify-center align-center mt-7>
+                 <v-layout row wrap justify-center align-center mt-7>
                  <v-card width="220" height="280" class="ma-6 pt-2 elevation-5">
                      <v-layout column justify-center align-center mt-4>
                         <v-img :src="image_1" width="90" class="mt-2 ml-2 mb-1" />
@@ -28,6 +29,8 @@
                  <img />
               </v-img>
             </v-flex>
+
+      <!-- Mobile & Tablet -->
         </v-layout>
     </v-content>
 </template>

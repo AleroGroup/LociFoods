@@ -1,13 +1,33 @@
 <template>
     <v-content>
-    <v-layout column justify-center align-center ma-8>
-       <v-flex xs12>
-         <div class="display-1"> Why Choose Us?</div>
+    <v-layout column justify-center align-center class="hidden-sm-and-down">
+       <v-flex xs12 md4>
+         <div class="display-1 mt-12"> Why Choose Us?</div>
        </v-flex>
-       <v-layout row ma-1>
+       <v-layout row justify-center align-center ml-3>
        <v-flex v-for="item in items" :key="item.id">
           <v-card flat color="transparent" class="mt-4 ml-7 mr-8">
-             <v-img :src="item.url" width="120" class="ml-3"></v-img>
+             <v-img :src="item.url" width="130" class="ml-3"></v-img>
+             <v-card-text class="main_title">
+                 {{ item.title}}
+             </v-card-text>
+          </v-card>
+         </v-flex>
+       </v-layout>
+       <v-flex xs12>
+         <a href="#aboutus"> <v-img :src='image' class="pulse"/> </a>
+       </v-flex>
+    </v-layout>
+
+<!-- Mobile & Tablet -->
+     <v-layout column justify-center align-center class="hidden-md-and-up">
+       <v-flex xs12 md4>
+         <div class="display-1 mt-12"> Why Choose Us?</div>
+       </v-flex>
+       <v-layout row justify-center align-center ml-12>
+       <v-flex v-for="item in items" :key="item.id">
+          <v-card flat color="transparent" class="mt-4 ml-8 mr-8">
+             <v-img :src="item.url" width="140" class="ml-3"></v-img>
              <v-card-text class="main_title">
                  {{ item.title}}
              </v-card-text>

@@ -5,17 +5,17 @@
           <v-col>
             <v-row>
                <v-layout column ml-12>
-                  <a href="#" class=" links_item_footer">Home</a>
-                  <a href="#" class=" links_item_footer">About Us</a>
-                  <a href="#" class=" links_item_footer">Our Products</a>
+                   <a href="#home" class="links_item_footer">Home</a>
+                   <a href="#aboutus" class="links_item_footer">About us</a>
+                   <a href="#ourproducts" class="links_item_footer">Our Products</a>
                </v-layout>
             </v-row>
           </v-col>
           <v-col>
             <v-row>
                <v-layout column ml-3>
-                  <a href="#" class=" links_item_footer">Contact Us</a>
-                  <a href="#" class=" links_item_footer">Privacy Policy</a>
+                  <a href="#contactus" class="links_item_footer">Contact us</a>
+                  <router-link to="/policy" class=" links_item_footer">Privacy Policy</router-link>
                </v-layout>
             </v-row>
           </v-col>

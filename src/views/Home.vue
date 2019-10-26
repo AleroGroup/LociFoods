@@ -7,15 +7,20 @@
           <v-layout column style="margin-left:100px">
             <div class="description" style="margin-top:170px"> Get Fresh, delicious <span class="secondary--text">Homecooked </span> Meals...</div>
           </v-layout>
-          <v-btn href="https://play.google.com/store/apps/details?id=com.mobiteks.apps.loci" dark large color="#0699CF" class="mt-3" style="margin-left:105px">Download App</v-btn>
+          <v-btn href="https://play.google.com/store/apps/details?id=com.mobiteks.apps.loci" dark color="#0699CF" class="mt-3" style="margin-left:105px">Download App</v-btn>
       <img />
     </v-img>
     </v-layout>
 
     <div></div>
+    <!-- Mobile & Table view -->
      <v-layout row wrap hidden-md-and-up>
-      <v-img :src=' main_mobile' height="300">
+      <v-img :src=' main_mobile' style="height:350px; width:100%;">
        <LociHeader />
+      <v-layout column style="margin-left:100px">
+            <div class="description white--text" style="margin-top:170px"> Get Fresh, delicious <span class="white--text">Homecooked </span> Meals...</div>
+          </v-layout>
+          <v-btn href="https://play.google.com/store/apps/details?id=com.mobiteks.apps.loci" dark  color="#0699CF" class="mt-3" style="margin-left:105px">Download App</v-btn>
       <img />
     </v-img>
     </v-layout>
@@ -68,7 +73,7 @@ export default {
   },
   data: () => ({
     main: IMAGEKIT_BASE_URL + '/images/photos/Group_357_gpGHIcRtd.svg',
-    main_mobile: IMAGEKIT_BASE_URL + '/loci/images/photos/img_N12h_ZdOT8.png'
+    main_mobile: IMAGEKIT_BASE_URL + '/loci/header_td6e5iMMe.png'
   })
 }
 </script>
