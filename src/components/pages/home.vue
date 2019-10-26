@@ -2,7 +2,7 @@
     <v-content>
     <v-layout column justify-center align-center ma-8>
        <v-flex xs12>
-         <div class="display-1 "> Why Choose Us?</div>
+         <div class="display-1"> Why Choose Us?</div>
        </v-flex>
        <v-layout row ma-1>
        <v-flex v-for="item in items" :key="item.id">
@@ -44,32 +44,3 @@ export default {
   })
 }
 </script>
-
-<style scoped>
-.pulse{
-  animation: pulse 2s infinite;
-  opacity: 0.7;
-  width: 55px;
-}
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
-  50% {
-    -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px); }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
-  50% {
-    -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px); }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
-</style>

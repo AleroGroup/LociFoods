@@ -7,7 +7,7 @@
 
     <v-layout column style="margin-left:100px; z-index:+1;margin-top:-300px">
       <div class="description mb-6"> Privacy Policy </div>
-        </v-layout>
+    </v-layout>
          <div id="introduction" style="margin-left:100px">
           <strong> Effective date: September 24, 2019 <br></strong><br>
            Loci foods ("us", "we", or "our") operates the Loci foods mobile application
@@ -21,6 +21,11 @@
            Unless otherwise defined in this Privacy Policy, the terms used in this Privacy
            Policy have the same meanings as in our Terms and Conditions.
          </div>
+         <v-layout justify-end align-center>
+           <v-flex xs12>
+            <a href="#aboutus"> <v-img :src='icon' class="pulse text-center"/> </a>
+          </v-flex>
+         </v-layout>
   </v-content>
 </template>
 
@@ -31,7 +36,9 @@ const IMAGEKIT_BASE_URL = 'https://ik.imagekit.io/qpt2onjfe/'
 export default {
   name: 'policy',
   data: () => ({
-    header: IMAGEKIT_BASE_URL + '/images/photos/main-2_qWvfJ3o_F.svg'
+    header: IMAGEKIT_BASE_URL + '/loci/images/photos/main-2_qWvfJ3o_F.svg',
+    icon: IMAGEKIT_BASE_URL + '/loci/images/mdi_more_horiz_ihVtWPCXnT.svg'
+
   }),
   components: {
     LociHeader

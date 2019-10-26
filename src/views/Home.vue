@@ -7,7 +7,7 @@
           <v-layout column style="margin-left:100px">
             <div class="description" style="margin-top:170px"> Get Fresh, delicious <span class="secondary--text">Homecooked </span> Meals...</div>
           </v-layout>
-          <v-btn dark large color="#0699CF" class="mt-3" style="margin-left:105px">Download App</v-btn>
+          <v-btn href="https://play.google.com/store/apps/details?id=com.mobiteks.apps.loci" dark large color="#0699CF" class="mt-3" style="margin-left:105px">Download App</v-btn>
       <img />
     </v-img>
     </v-layout>
