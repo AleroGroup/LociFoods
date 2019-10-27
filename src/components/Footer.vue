@@ -26,7 +26,7 @@
         <v-spacer />
         <v-layout justify-end class="ml-7">
             <div class="ig">
-              <a href="#"><img class="ml-4" :src="instagram" alt="instagram"></a>
+              <a href="https://instagram.com/loci_foods?igshid=1feazc81jqwtr"><img class="ml-4" :src="instagram" alt="instagram"></a>
             </div>
             <div class="linkedin">
                 <a href="https://ke.linkedin.com/in/loci-foods-067062193"><img class="ml-4" :src="linkedIn" alt="linkedIn"></a>
