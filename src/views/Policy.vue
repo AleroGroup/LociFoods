@@ -1,10 +1,21 @@
 <template>
   <v-content id="policy">
-    <v-img :src='header'  style="z-index:1">
+    <v-img :src='header'  style="z-index:1" class="hidden-sm-and-down">
        <LociHeader />
       <img />
     </v-img>
+  <div></div>
+    <!-- Mobile & Table view -->
+     <v-layout row wrap hidden-md-and-up class="hidden-md-and-up">
+      <v-img :src=' main_mobile' style="height:350px; width:100%;">
+       <LociHeader />
+       <v-layout column style="margin-left:100px">
+        <img />
+        </v-layout>
+      </v-img>
+    </v-layout>
 
+  <div class="hidden-sm-and-down">
     <v-layout column style="margin-left:8%; z-index:+1;margin-top:-320px">
       <div class="description mb-2"> Privacy Policy </div>
     </v-layout>
@@ -27,9 +38,29 @@
              <a href="#main"> <v-img :src='icon' class="pulse text-center"/> </a>
           </v-flex>
          </v-layout>
-         <v-layout id="main" style="margin-left:8%" mt-12>
-             <section class="policies">
-            <v-layout column class="policy-details" mt-12>
+      </div>
+
+  <div class="hidden-md-and-up mb-12">
+    <v-layout column style="margin-left:8%; z-index:+1;margin-top:-180px">
+      <div class="description mb-2"> Privacy Policy </div>
+    </v-layout>
+         <v-flex xs10 md4 id="introduction" style="margin-left:8%">
+          <strong> Effective date: September 24, 2019 <br></strong><br>
+           Loci foods ("us", "we", or "our") operates the Loci foods mobile application
+           (hereinafter referred to as the "Service"). <br><br>
+           This page informs you of our policiesregarding the collection, use, and disclosure
+           of personal data when you use our Service and the choices you have associated with
+           that data. Our Privacy Policy for Loci foods is created with the help of the Privacy
+           Policies.com Privacy Policy Generator. <br>
+           We use your data to provide and improve the Service. By using the Service,
+           you agree to the collection and use of information in accordance with this policy.
+           Unless otherwise defined in this Privacy Policy, the terms used in this Privacy
+           Policy have the same meanings as in our Terms and Conditions.
+         </v-flex>
+      </div>
+         <v-layout id="main" style="margin-left:8%">
+             <section class="policies mt-12" >
+            <v-layout column class="policy-details" style="margin-top:180px;">
                 <h1>Information collection and Use</h1>
                 <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
                 <div></div>
@@ -125,11 +156,17 @@ export default {
   name: 'policy',
   data: () => ({
     header: IMAGEKIT_BASE_URL + '/loci/images/photos/main-2_qWvfJ3o_F.svg',
-    icon: IMAGEKIT_BASE_URL + '/loci/images/mdi_more_horiz_ihVtWPCXnT.svg'
-
+    icon: IMAGEKIT_BASE_URL + '/loci/images/mdi_more_horiz_ihVtWPCXnT.svg',
+    main_mobile: IMAGEKIT_BASE_URL + 'loci/images/photos/img__1__h4GwKgpEnF.png'
   }),
   components: {
     LociHeader
+  },
+  head: {
+    title: {
+      inner: 'Loci Foods',
+      complement: 'Policy'
+    }
   }
 }
 </script>
