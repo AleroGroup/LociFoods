@@ -6,10 +6,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+body{
+    overflow-x: hidden;
+}
+
 body,.display-1, .display-2, .title  { 
      color: $loci-gray !important;
      font-family: 'Montserrat', sans-serif;
-     overflow-x: hidden;
 }
 
 .logo {
