@@ -4,7 +4,7 @@
        <v-flex xs12 md4>
          <div class="display-1 mt-12"> Why Choose Us?</div>
        </v-flex>
-       <v-layout row justify-center align-center ml-3>
+       <v-layout row wrap justify-center align-center ml-3>
        <v-flex v-for="item in items" :key="item.id">
           <v-card flat color="transparent" class="mt-4 ml-7 mr-8">
              <v-img :src="item.url" width="130" class="ml-3"></v-img>
