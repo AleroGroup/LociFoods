@@ -18,6 +18,12 @@ export default {
   }),
   components: {
     Footer
+  },
+  head: {
+    title: {
+      inner: 'Loci Foods',
+      complement: 'Homepage'
+    }
   }
 }
 </script>
