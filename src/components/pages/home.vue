@@ -1,18 +1,30 @@
 <template>
     <v-content>
-    <v-layout column wrap justify-center align-center class="hidden-sm-and-down">
+    <v-layout column justify-center align-center class="hidden-sm-and-down">
        <v-flex xs12 md4>
          <div class="display-1 mt-12"> Why Choose Us?</div>
        </v-flex>
-       <v-layout row wrap justify-center align-center ml-3>
-       <v-flex xs12 md5 v-for="item in items" :key="item.id">
-          <v-card flat color="transparent" class="mt-4 ml-7 mr-8">
-             <v-img :src="item.url" width="130" class="ml-3"></v-img>
+       <v-layout row justify-center align-center ml-3>
+          <v-card flat color="transparent" class="mt-4 mr-8">
+             <v-img :src="item_1" width="140" class="ml-3"></v-img>
              <v-card-text class="main_title">
-                 {{ item.title}}
+                Organic meals
              </v-card-text>
           </v-card>
-         </v-flex>
+
+          <v-card flat color="transparent" class="mt-4 mr-8">
+             <v-img :src="item_2" width="140" class="ml-3"></v-img>
+             <v-card-text class="main_title">
+                 Home delivery
+             </v-card-text>
+          </v-card>
+
+          <v-card flat color="transparent" class="mt-4 mr-8">
+             <v-img :src="item_3" width="140" class="ml-3"></v-img>
+             <v-card-text class="main_title">
+                Pocket friendly
+             </v-card-text>
+          </v-card>
        </v-layout>
        <v-flex xs12>
          <a href="#aboutus"> <v-img :src='image' class="pulse"/> </a>
@@ -25,11 +37,25 @@
          <div class="display-1 mt-12"> Why Choose Us?</div>
        </v-flex>
        <v-layout row justify-center align-center ml-12>
-       <v-flex v-for="item in items" :key="item.id">
-          <v-card flat color="transparent" class="mt-4 ml-8 mr-8">
-             <v-img :src="item.url" width="140" class="ml-3"></v-img>
+       <v-flex>
+          <v-card flat color="transparent" class="mt-4 mr-8">
+             <v-img :src="item_1" width="140" class="ml-3"></v-img>
              <v-card-text class="main_title">
-                 {{ item.title}}
+                Organic meals
+             </v-card-text>
+          </v-card>
+
+          <v-card flat color="transparent" class="mt-4 mr-8">
+             <v-img :src="item_2" width="140" class="ml-3"></v-img>
+             <v-card-text class="main_title">
+                 Home delivery
+             </v-card-text>
+          </v-card>
+
+          <v-card flat color="transparent" class="mt-4 mr-8">
+             <v-img :src="item_3" width="140" class="ml-3"></v-img>
+             <v-card-text class="main_title">
+                Pocket friendly
              </v-card-text>
           </v-card>
          </v-flex>
@@ -46,20 +72,9 @@ const IMAGEKIT_BASE_URL = 'https://ik.imagekit.io/qpt2onjfe/'
 
 export default {
   data: () => ({
-    items: [
-      {
-        url: IMAGEKIT_BASE_URL + '/loci/Organic_home_cooked_BH4UwxYZ3.svg',
-        title: 'Organic meals'
-      },
-      {
-        url: IMAGEKIT_BASE_URL + '/loci/images/icons/Home_delivery_Yr97MhUvXZ.svg',
-        title: 'Home delivery'
-      },
-      {
-        url: IMAGEKIT_BASE_URL + '/loci/images/Pocket__money_gzXwV7Mi7.svg',
-        title: 'Pocket friendly'
-      }
-    ],
+    item_1: IMAGEKIT_BASE_URL + '/loci/Organic_home_cooked_BH4UwxYZ3.svg',
+    item_2: IMAGEKIT_BASE_URL + '/loci/images/icons/Home_delivery_Yr97MhUvXZ.svg',
+    item_3: IMAGEKIT_BASE_URL + '/loci/images/Pocket__money_gzXwV7Mi7.svg',
     image: IMAGEKIT_BASE_URL + 'images/mdi_keyboard_arrow_down_u1f4Vrzg_.svg'
   })
 }
