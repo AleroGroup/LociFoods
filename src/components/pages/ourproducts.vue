@@ -77,22 +77,22 @@
 
   <v-content class="ml-10 hidden-md-and-up">
     <v-layout row wrap justify-center align-center>
-         <v-card flat width="360" height='400' class="ml-2  mb-8">
-           <v-img :src="image_1" width="330" height="300" class="product_imgs" />
+         <v-card flat width="330" height='400' class="ml-2  mb-8">
+           <v-img :src="image_1" width="300" height="300" class="product_imgs" />
            <h1 class="title-1 secondary--text mt-5 mb-2">Explore our homecooked <br> Menu</h1>
          </v-card>
-         <v-card flat width="360" height='400' class="ml-1  mb-8">
-           <v-img :src="image_2" width="330" height="300" class="product_imgs" />
+         <v-card flat width="330" height='400' class="ml-1  mb-8">
+           <v-img :src="image_2" width="300" height="300" class="product_imgs" />
            <h1 class="title-1 secondary--text mt-5 mb-12">Eat well live longer</h1>
        </v-card>
     </v-layout>
     <v-layout row wrap justify-center align-center>
-      <v-card flat width="360" height='400' class="ml-2 mb-8">
-        <v-img :src="image_3" width="330" height="300" class="product_imgs mt-1" />
+      <v-card flat width="330" height='400' class="ml-2 mb-8">
+        <v-img :src="image_3" width="300" height="300" class="product_imgs mt-1" />
         <h1 class="title-1 secondary--text mt-5 mb-2">Our delivery services provide you convinience.</h1>
        </v-card>
-         <v-card flat width="360" height='400' class="ml-1  mb-8">
-           <v-img :src="image_4" width="330" height="300" class="product_imgs mt-1"/>
+         <v-card flat width="330" height='400' class="ml-1  mb-8">
+           <v-img :src="image_4" width="300" height="300" class="product_imgs mt-1"/>
             <h1 class="title-1 secondary--text mt-5 mb-10" >We leverage on technology</h1>
        </v-card>
     </v-layout>

@@ -38,21 +38,21 @@
        </v-flex>
        <v-layout row justify-center align-center ml-12>
        <v-flex>
-          <v-card flat color="transparent" class="mt-4 mr-8">
+          <v-card flat color="transparent" class="mt-4 mr-12">
              <v-img :src="item_1" width="140" class="ml-3"></v-img>
              <v-card-text class="main_title">
                 Organic meals
              </v-card-text>
           </v-card>
 
-          <v-card flat color="transparent" class="mt-4 mr-8">
+          <v-card flat color="transparent" class="mt-4 mr-12">
              <v-img :src="item_2" width="140" class="ml-3"></v-img>
              <v-card-text class="main_title">
                  Home delivery
              </v-card-text>
           </v-card>
 
-          <v-card flat color="transparent" class="mt-4 mr-8">
+          <v-card flat color="transparent" class="mt-4 mr-12">
              <v-img :src="item_3" width="140" class="ml-3"></v-img>
              <v-card-text class="main_title">
                 Pocket friendly
